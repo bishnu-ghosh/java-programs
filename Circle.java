@@ -20,7 +20,7 @@ class rectangle extends Shop {
     }
 }
 
-class Circle extends Shop {
+public class Circle extends Shop {
     double radius = 2;
 
     void area() {
@@ -36,4 +36,5 @@ class Circle extends Shop {
         r.area();
         c.area();
     }
+
 }
