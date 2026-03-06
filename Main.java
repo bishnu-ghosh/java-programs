@@ -1,26 +1,26 @@
-class NumberCheck {
-    int num;   
-    
-    NumberCheck(int n) {
-        num = n;
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
     }
+}
 
-    void checkNumber() {
-        if (num > 0) {
-            System.out.println("The number is Positive.");
-        } 
-        else if (num < 0) {
-            System.out.println("The number is Negative.");
-        } 
-        else {
-            System.out.println("The number is Zero.");
-        }
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        NumberCheck obj = new NumberCheck(-10);
-        obj.checkNumber();
+        Animal a1 = new Dog();
+        Animal a2 = new Cat();
+        a1.sound();
+        a2.sound();
     }
 }
